@@ -1,0 +1,9 @@
+<nav class="list-group flex-row flex-sm-column h-100">
+  <a
+    *ngFor="let navItem of constants.NAV_ITEMS; trackBy: constants.trackByFn"
+    routerLink="{{navItem.path}}"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action flex-fill rounded-0 text-center d-flex flex-column justify-content-center"
+  >
+  {{navItem.label}}</a>
+</nav>
