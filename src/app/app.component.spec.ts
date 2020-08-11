@@ -1,5 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AppConstants } from './shared/constants/app.constants';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -16,16 +17,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'portfolio-new'`, () => {
+  it(`should have as title 'Jared Huffstutler'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('portfolio-new');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('portfolio-new app is running!');
+    expect(app.title).toEqual(AppConstants.TITLE);
   });
 });

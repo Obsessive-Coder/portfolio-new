@@ -1,9 +1,11 @@
-<div class="d-flex flex-column flex-sm-row main">
-  <app-navigation class="site-nav"></app-navigation>
+<div class="container-sm">
+  <div class="d-flex flex-column flex-sm-row overflow-hidden main">
+    <app-navigation class="site-nav"></app-navigation>
 
-  <div class="container-fluid text-center">
-    <router-outlet ></router-outlet>
+    <div class="container-fluid text-center">
+      <router-outlet ></router-outlet>
+    </div>
   </div>
-</div>
 
-<app-contact></app-contact>
+  <app-contact></app-contact>
+</div>

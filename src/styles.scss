@@ -1,0 +1,24 @@
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+body {
+  background-image: url(assets/images/pexels-photo-235985.jpg);
+}
+
+.text-lightblue,
+a.text-lightblue:hover {
+  color: lightblue;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 0.75rem;
+}
+
+@media only screen and (min-width: 575px) {
+  .w-sm-25 {
+    width: 25% !important;
+  }
+}

@@ -1,17 +1,11 @@
-<div class="text-center">
-  <div class="d-flex justify-content-around">
-    <a
-      *ngFor="let icon of constants.SOCIAL_ICONS; trackBy: constants.trackByFn"
-      href="{{icon.url}}"
-      target="_blank"
-      rel="noopener"
-      class="rounded-circle"
-    >
-      <fa-icon [icon]="icon.icon" class="fa-4x fa-fw"></fa-icon>
-    </a>
-  </div>
-
-  <a href="#" target="_blank" rel="noopener">
-    View My Resume
+<div class="d-flex flex-sm-column justify-content-around text-center">
+  <a
+    *ngFor="let icon of constants.SOCIAL_ICONS; trackBy: constants.trackByFn"
+    href="{{icon.url}}"
+    target="_blank"
+    rel="noreferrer noopener"
+    class="mx-4 mx-sm-0 rounded-circle text-lightblue"
+  >
+    <fa-icon [icon]="icon.icon" class="fa-4x fa-fw"></fa-icon>
   </a>
 </div>

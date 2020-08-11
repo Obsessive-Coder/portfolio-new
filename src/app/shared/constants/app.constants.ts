@@ -1,4 +1,4 @@
-import { Injectable, Type } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { NavItem, SocialItem } from '../interfaces/index';
 import { BioComponent } from '../../bio/bio.component';
 import { Routes, Route } from '@angular/router';
@@ -11,7 +11,11 @@ const paths: Array<string> = ['biography', 'experience', 'education'];
   providedIn: 'root'
 })
 export class AppConstants {
-  // Navigation Routes.
+  static TITLE = 'Jared Huffstutler';
+  static EMAIL = 'jaredhuff85@gmail.com';
+  static PHONE: string[] = ['502', '201', '5820'];
+
+  // Navigation routes.
   static NAV_ROUTES: Routes = [{
     path: 'biography',
     component: BioComponent
@@ -27,6 +31,7 @@ export class AppConstants {
     pathMatch: 'full',
   }];
 
+  // Navigation links.
   public NAV_ITEMS: Array<NavItem> = AppConstants.NAV_ROUTES
     .filter(({ path }: Route) => path)
     .map(({ path }: Route, id) => ({
@@ -36,6 +41,7 @@ export class AppConstants {
       }
     ));
 
+  // Social media icons.
   public SOCIAL_ICONS: Array<SocialItem> = [{
     url: 'https://github.com/Obsessive-Coder',
     icon: faGithub

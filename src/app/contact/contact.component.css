@@ -1,0 +1,12 @@
+.contact-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media only screen and (min-width: 575px) {
+  .social-icons {
+    width: 25% !important;
+  }
+}
