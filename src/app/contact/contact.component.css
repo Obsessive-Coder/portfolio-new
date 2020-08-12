@@ -5,6 +5,10 @@
   z-index: -1;
 }
 
+.phone-number-part {
+  letter-spacing: 1rem;
+}
+
 @media only screen and (min-width: 575px) {
   .social-icons {
     width: 25% !important;

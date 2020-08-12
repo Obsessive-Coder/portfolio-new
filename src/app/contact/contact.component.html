@@ -1,4 +1,4 @@
-<div class="d-flex flex-column flex-sm-row align-items-center justify-content-around my-5 border border-success">
+<div class="d-flex flex-column flex-sm-row align-items-center justify-content-around my-5 glow-shadow">
   <a
     href="tel:{{formattedPhoneNumber}}"
     rel="noreferrer noopener"
@@ -6,17 +6,17 @@
   >
     <span
       *ngFor="let phonePart of phoneNumber; index as i"
-      class="m-2 mx-sm-0"
+      class="m-2 mx-sm-0 phone-number-part"
     >
       {{phonePart}}
     </span>
   </a>
 
   <div class="align-self-sm-start flex-fill order-0 order-sm-1 text-center">
-    <h1 class="d-flex flex-column text-lightblue">
+    <h2 class="d-flex flex-column h1 text-lightblue">
       <span>Jared</span>
       <span>Huffstutler</span>
-    </h1>
+    </h2>
 
     <a href="mailto:{{emailAddress}}" class="text-lightblue">
       {{emailAddress}}

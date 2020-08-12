@@ -14,6 +14,7 @@ export class AppConstants {
   static TITLE = 'Jared Huffstutler';
   static EMAIL = 'jaredhuff85@gmail.com';
   static PHONE: string[] = ['502', '201', '5820'];
+  static BIO_TITLE = 'What\'s up with this guy?';
 
   // Navigation routes.
   static NAV_ROUTES: Routes = [{
